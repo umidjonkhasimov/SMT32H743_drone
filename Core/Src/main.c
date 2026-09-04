@@ -65,9 +65,9 @@
 
 /* Full stick deflection, in deg/s. Deliberately gentle for a first build -
    a competition acro setup would be closer to 800. */
-#define MAX_RATE_ROLL       400.0f
-#define MAX_RATE_PITCH      400.0f
-#define MAX_RATE_YAW        300.0f
+#define MAX_RATE_ROLL       200.0f
+#define MAX_RATE_PITCH      200.0f
+#define MAX_RATE_YAW        200.0f
 
 /* Below this throttle the aircraft is not flying, so the controller is held
    in reset rather than integrating against the ground. */
@@ -186,7 +186,7 @@ int main(void)
               | SCB_SHCSR_BUSFAULTENA_Msk
               | SCB_SHCSR_MEMFAULTENA_Msk;
   /* USER CODE END 1 */
- 
+
   /* MPU Configuration--------------------------------------------------------*/
   MPU_Config();
 
